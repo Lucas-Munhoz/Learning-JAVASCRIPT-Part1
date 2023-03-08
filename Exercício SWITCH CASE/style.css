@@ -1,0 +1,18 @@
+span{
+    color: red;
+}
+
+code{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: green;
+}
+
+div{
+    background-color: rgb(207, 207, 207);
+    border: 2px solid green;
+}
+
+#coment{
+    color: black;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Distância</title>
+</head>
+<body>
+    <h1>Anotação importante</h1>
+    <p>
+        Coisa que aprendi nesse exercício <br>
+        O CASE dentro do switch precisa ser informado o tipo do dado. <br><br>
+        Tentei esse codigo: <br> <br>
+        <h2>Esse codigo funciona, mas está mal feito, <span>veja a correção no arquivo CONVERSOR.JS</span>!!!</h2>
+        <div>
+            <pre>
+                <code>
+                    switch(option) {
+                        case <span>1:</span>
+                            let parsec = initialDistance * 0.306601
+                            alert(
+                                "Distância em Anos-luz: " + initialDistance + ".\n" +
+                                "Parsec(pc): " + parsec + "pc"
+                            )
+                            break
+                        case <span>2:</span>
+                            let unidadeAstrononima = initialDistance * 63241.1
+                            alert(
+                                "Distância em Anos-luz: " + initialDistance + ".\n" +
+                                "Unidade astronônima: " + unidadeAstrononima + "AU"
+                            )
+                            break
+                        case <span>3:</span>             <span id="coment">//codigo utilizado para realizar a operação 10¹²(10 elevado a 12ª potencia)</span>
+                            let km = initialDistance * Math.pow(10,12)
+                            alert(
+                                "Distância em Anos-luz: " + initialDistance + ".\n" +
+                                "Quilômetros: " + km + "km"
+                            )
+                            break
+                        default:
+                            alert(
+                                "Distância em Anos-luz: " + initialDistance + ".\n" +
+                                "Unidade não identificada: Conversão fora de escopo"
+                            )
+                    }
+                </code>
+            </pre>
+        </div>
+        
+        <br>
+        <br>
+        <span>Porem ele não funcionou!</span>
+        Então eu coloquei os dados dos CASE's como strings, e assim funcionou!!!
+    </p>
+    <script src="conversor.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function's</title>
+</head>
+<body>
+    <div>
+        <h1>CÓDIGO UTILIZADO NESSA PÁGINA</h1>
+        <pre>
+            <code>
+                const doubleVelocity = (velocity) => {
+                    return velocity * 2
+                }
+                console.log("_______________________________________")
+                console.log("Retorno da arrow function")
+                console.log(doubleVelocity(60))
+                
+                //---------------------------------------------
+                //     ATENÇÃO: CASOS MUUUUITO ESPECÍFICOS
+                //---------------------------------------------
+                
+                console.log("_______________________________________")
+                
+                // ARROW FUNCTION's com apenas uma linha
+                // podem ser mais simplificadas ainda
+                
+                const doubleVelocity2 = (velocity) => velocity * 2
+                
+                console.log("Retorno da arrow function de uma linha")
+                console.log(doubleVelocity(60))
+                console.log("_______________________________________")
+                
+                // ARROW FUNCTION's com apenas uma linha
+                // podem ser mais simplificadas ainda
+                // caso possua apenas um parametro
+                // podemos remover os parenteses
+                
+                const doubleVelocity3 = velocity => velocity * 2
+                
+                console.log("Retorno da arrow function sem parenteses")
+                console.log(doubleVelocity(60))
+                console.log("_______________________________________")
+            </code>
+        </pre>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

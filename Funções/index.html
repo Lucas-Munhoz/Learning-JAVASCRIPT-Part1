@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FUNÇÕES</title>
+</head>
+<body>
+
+    <div class="função">
+        <h1>FUNÇÕES</h1>
+        <h4>Da uma olhada no código JS ai po</h4>
+        <p>Essa fumbica ai simplesmente vai guardar um bloco de código ali dentro, ai quando vc quiser executar esse bloco de código é só chamar ela. SIMPLES ASSIM</p>
+        <section>
+            <pre>
+                <code>
+                    //declarando a função
+                    function algumaTarefa() {
+                        < bloco de código >
+                    }
+
+                    //chamando a função
+                    algumaTarefa()
+                </code>
+            </pre>
+        </section>
+        <script src="funcoes.js"></script>
+    </div>
+    <hr>
+    <div class="b">
+        <h1>PARÂMETRO DA FUNÇÃO</h1>
+        <p>PARÂMETRO servem para passar valores para a função utilizar dentro do bloco de código dela. Da pra usar mais de um, só separar por virgula</p>
+        <section>
+            <pre>
+                <code>
+                    //declarando a função
+                    function algumaTarefa(<span>PARÂMETRO</span>) {
+                        < bloco de código >
+                    }
+
+                    //chamando a função
+                    algumaTarefa(<span>PARÂMETRO</span>)
+                </code>
+            </pre>
+        </section>
+    </div>
+    <hr>
+    <div class="b">
+        <h1>PARÂMETRO PADRÃO</h1>
+        <p>Caso a função não receba um parâmetro ela usará esse padrão que será passado na declaração</p>
+        <section>
+            <pre>
+                <code>
+                    //declarando a função
+                    function algumaTarefa(<span>PARÂMETRO1, PARÂMETRO2 = "padrão"</span>) {
+                        < bloco de código >
+                    }
+
+                    //chamando a função sem um dos parâmetros
+                    algumaTarefa(<span>PARÂMETRO1</span>)
+                </code>
+            </pre>
+        </section>
+    </div>
+    <hr>
+    <div>
+        <h1>CUIDADOS COM OS PARÂMETROS</h1>
+        <p>
+            <ol>
+                <li>Parâmetros não são necessários para executar uma função, mas se ela tiver algum que não tenha um "parametro padrão" ele ficará como "UNDEFINED"</li>
+                <li>Cuidado com a ordem dos parâmetros, pois o "PARÂMETRO PADRÃO" não substitui o lugar na ordem dos parâmetros. EXEMPLO ABAIXO</li>
+            </ol>
+        </p>
+        <section>
+            <pre>
+                <code>
+                    //declarando a função
+                    function algumaTarefa(<span>PARÂMETRO1, PARÂMETRO2 = "padrão", PARÂMETRO3</span>) {
+                        < bloco de código >
+                    }
+
+                    //chamando a função sem um dos parâmetros
+                    //NÃO CONFUNDA, o padrão do parâmetro2 não substituira na ordem
+                    //Então o item "oqueQueroNoParâmetro3" será passado para o PARÂMETRO2
+                    algumaTarefa(<span>oqueQueroNoParâmetro1, oqueQueroNoParâmetro3</span>)
+                </code>
+            </pre>
+        </section>
+    </div>
+    <hr>
+    <div class="b">
+        <h1>RETORNO DA FUNÇÃO</h1>
+        <p>Serve para usarmos alguma variável que declarada dentro dessa função fora dela, ou seja mais pra frente no código.</p>
+        <section>
+            <pre>
+                <code>
+                    //declarando a função
+                    function algumaTarefa() {
+                        < bloco de código >
+                        <span>return NOMEdaVARIAVEL</span>
+                    }
+
+                    //chamando a função sem um dos parâmetros
+                    algumaTarefa()
+                </code>
+            </pre>
+        </section>
+    </div>
+</body>
+</html>

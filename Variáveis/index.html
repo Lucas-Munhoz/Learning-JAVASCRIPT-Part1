@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIAVEIS</title>
+</head>
+<body>
+    <div>
+        <pre>
+            <code>
+                //LET variável local padrão
+
+                //VAR variável local padrão, porem sempre lida no começo
+                //Não importa onde foi declarada, sempre será lida no começo DO LOCAL
+
+                //EXEMPLO MUITO BOM
+
+                function setSpaceshipDetails() {
+                    let velocity = 50
+                    if(velocity == 50) {
+                        velocity = 60
+                        var spaceshipName = "ELEMENTAL" //COMO SE FOSSE DECLARADA NO COMEÇO DA FUNÇÃO
+                        let spaceshipType = "Discovery" //MAS ESSA AQUI SÓ FUNCIONA DENTRO DO IF
+                    }                                   //POR ISSO QUE VAI DAR ESSE ERRO MUITO DOIDO AI
+
+                    console.log(velocity)
+                    console.log(spaceshipName)
+                    console.log(spaceshipType)
+                }
+
+                setSpaceshipDetails()
+            </code>
+        </pre>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
